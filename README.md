@@ -42,3 +42,15 @@ Desenvolvido com **HTML, CSS e JavaScript**, focando em **design sofisticado**, 
 | Galeria | Depoimentos |
 |---------|-------------|
 | ![Galeria de Fotos](/docs/preview3.png) | ![Carrossel de Depoimentos](/docs/preview5.png) |
+
+---
+
+## 🌐 Visualização Online
+
+Clique no botão abaixo para acessar a versão online do site e explorar todas as funcionalidades:
+
+[![Acessar Site](https://img.shields.io/badge/🌐_Acessar_Site_Caffè_Sublime-FF7135?style=for-the-badge&logo=google-chrome&logoColor=white)](https://caffe-sublime.onrender.com)
+
+*Disponível para teste em desktop e dispositivos móveis*
+
+---
