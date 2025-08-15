@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caffè Sublime</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles/coffee.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/static/favicon/site.webmanifest">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Caffè Sublime</div>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button class="menu-mobile-button"><i class="fas fa-bars"></i></button>
+  </header>
+
+  <section class="banner">
+    <div class="banner-content">
+      <h1>Sabores que Inspiram, Momentos que Marcam</h1>
+      <p>Grãos selecionados • Ambiente acolhedor</p>
+      <a href="#cardapio" class="btn-banner">Ver Cardápio</a>
+    </div>
+  </section>
+
+  <section id="sobre" class="secao">
+    <h2>Sobre Nós</h2>
+    <div class="sobre-content">
+      <img src="/static/images/sobre.jpeg" alt="Interior da cafeteria" loading="lazy">
+      <div>
+        <p>Desde 2015, servimos café artesanal com grãos de pequenos produtores. Nosso espaço foi criado para quem aprecia boa conversa acompanhada de um café excepcional.</p>
+        <ul>
+          <li>Grãos 100% arábica</li>
+          <li>Torra própria</li>
+          <li>Baristas experientes</li>
+          <li>Ambiente aconchegante</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="cardapio" class="secao destaque">
+    <h2>Cardápio</h2>
+    <div class="itens-cardapio">
+      <div class="item">
+        <div class="item-icon"><i class="fas fa-coffee"></i></div>
+        <h3>Expresso Sublime</h3>
+        <p>Intenso e aromático</p>
+        <span>R$ 8,90</span> 
+        <button class="btn-detalhes" data-item="expresso"><i class="fas fa-plus"></i> Detalhes</button>
+      </div>
+      <div class="item">
+        <div class="item-icon"><i class="fas fa-mug-hot"></i></div>
+        <h3>Cappuccino Clássico</h3>
+        <p>Equilíbrio perfeito entre café e leite vaporizado</p>
+        <span>R$ 12,90</span> 
+        <button class="btn-detalhes" data-item="cappuccino"><i class="fas fa-plus"></i> Detalhes</button>
+      </div>
+      <div class="item">
+        <div class="item-icon"><i class="fas fa-bread-slice"></i></div>
+        <h3>Croissant Artesanal</h3>
+        <p>Crocante por fora e macio por dentro</p>
+        <span>R$ 9,90</span> 
+        <button class="btn-detalhes" data-item="croissant"><i class="fas fa-plus"></i> Detalhes</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" class="secao">
+    <h2>Nosso Espaço</h2>
+    <div class="galeria-container">
+      <div class="galeria-item">
+        <img src="/static/images/galeria/ambiente1.jpeg" alt="Ambiente interno durante o dia" loading="lazy">
+      </div>
+      <div class="galeria-item">
+        <img src="/static/images/galeria/balcao.jpeg" alt="Balcão de atendimento" loading="lazy">
+      </div>
+      <div class="galeria-item">
+        <img src="/static/images/galeria/area-externa.jpeg" alt="Área externa com jardim" loading="lazy">
+      </div>
+      <div class="galeria-item">
+        <img src="/static/images/galeria/barista.jpeg" alt="Barista preparando café" loading="lazy">
+      </div>
+      <div class="galeria-item">
+        <img src="/static/images/galeria/bolos.jpeg" alt="Variedade de bolos artesanais" loading="lazy">
+      </div>
+      <div class="galeria-item">
+        <img src="/static/images/galeria/evento.jpeg" alt="Espaço para eventos" loading="lazy">
+      </div>
+      <div class="galeria-item">
+        <img src="/static/images/galeria/ambente2.jpeg" alt="Área de trabalho" loading="lazy">
+      </div>
+      <div class="galeria-item">
+        <img src="/static/images/galeria/noite.jpeg" alt="Ambiente noturno" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos" class="secao destaque">
+    <h2>O Que Dizem Nossos Clientes</h2>
+    <div class="depoimentos-carrossel">
+      <button class="carrossel-controle anterior" aria-label="Depoimento anterior">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      
+      <div class="depoimentos-container">
+        <div class="depoimento ativo">
+          <div class="avaliacao">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p>"O melhor café da cidade! Venho toda semana e nunca me decepciono. Os baristas são incríveis e o ambiente é perfeito para trabalhar."</p>
+          <div class="cliente-info">
+            <img src="/static/images/clientes/cliente1.jpeg" alt="Ana Carolina" loading="lazy">
+            <div>
+              <span class="nome-cliente">Ana Carolina</span>
+              <span class="data-depoimento">Frequenta desde 2020</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="depoimento">
+          <div class="avaliacao">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p>"Adoro os croissants! Sempre fresquinhos e o atendimento é impecável. Meu lugar favorito para encontrar os amigos."</p>
+          <div class="cliente-info">
+            <img src="/static/images/clientes/cliente2.jpeg" alt="Ricardo Almeida" loading="lazy">
+            <div>
+              <span class="nome-cliente">Ricardo Almeida</span>
+              <span class="data-depoimento">Cliente semanal</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="depoimento">
+          <div class="avaliacao">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+          </div>
+          <p>"Como nômade digital, já visitei cafeterias no mundo todo e a Caffè Sublime está entre minhas favoritas. WiFi excelente!"</p>
+          <div class="cliente-info">
+            <img src="/static/images/clientes/cliente3.jpeg" alt="Juliana Santos" loading="lazy">
+            <div>
+              <span class="nome-cliente">Juliana Santos</span>
+              <span class="data-depoimento">Visitante frequente</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="depoimento">
+          <div class="avaliacao">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p>"Amo o café gelado de baunilha! Trago todos os meus clientes aqui para reuniões. Ambiente profissional e acolhedor."</p>
+          <div class="cliente-info">
+            <img src="/static/images/clientes/cliente4.jpeg" alt="Marcelo Costa" loading="lazy">
+            <div>
+              <span class="nome-cliente">Marcelo Costa</span>
+              <span class="data-depoimento">Cliente desde 2019</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <button class="carrossel-controle proximo" aria-label="Próximo depoimento">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      
+      <div class="carrossel-indicadores"></div>
+    </div>
+  </section>
+
+  <div class="modal-overlay">
+    <div class="modal">
+      <button class="close-modal"><i class="fas fa-times"></i></button>
+      <div class="modal-content">
+        <div class="modal-item" id="expresso">
+          <h3>Expresso Sublime</h3>
+          <p>Nosso Expresso Sublime é preparado com grãos 100% arábica, selecionados a dedo nas melhores plantações da região. Com um processo de torra especial que realça notas de chocolate amargo e nozes, este café é a essência da nossa paixão pela bebida.</p>
+          <p><strong>Características:</strong> Corpo encorpado, acidez equilibrada e crema persistente.</p>
+          <p><strong>Preparo:</strong> Extraído em máquina profissional com temperatura e pressão controladas.</p>
+        </div>
+        <div class="modal-item" id="cappuccino">
+          <h3>Cappuccino Clássico</h3>
+          <p>O Cappuccino Clássico do Caffè Sublime é uma harmonia perfeita entre nosso expresso premium e leite vaporizado na textura ideal, finalizado com uma generosa camada de espuma de leite cremosa.</p>
+          <p><strong>Características:</strong> Proporção perfeita de 1/3 de expresso, 1/3 de leite vaporizado e 1/3 de espuma.</p>
+          <p><strong>Diferencial:</strong> Servido com um toque de canela ou cacau em pó, conforme preferência.</p>
+        </div>
+        <div class="modal-item" id="croissant">
+          <h3>Croissant Artesanal</h3>
+          <p>Nosso Croissant Artesanal é feito diariamente com manteiga de primeira qualidade e um processo de fermentação lenta que garante aquelas camadas perfeitas e crocantes que derretem na boca.</p>
+          <p><strong>Características:</strong> Massa folhada em camadas, dourado por fora e macio por dentro.</p>
+          <p><strong>Opções:</strong> Puro ou recheado com geleia artesanal, chocolate ou creme de baunilha.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="contato" class="secao">
+    <h2>Venha nos Visitar</h2>
+    <div class="contato-content">
+      <div class="contato-info">
+        <p><i class="fas fa-map-marker-alt"></i> <strong>Endereço:</strong> Rua Monteiro, 122 - Centro</p>
+        <p><i class="fas fa-clock"></i> <strong>Horário:</strong> Seg-Sáb: 7h às 18h | Dom: 8h às 14h</p>
+        <p><i class="fas fa-phone"></i> <strong>Telefone:</strong> (11) 9876-5432</p>
+        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> contato@caffesublime.com</p>
+      </div>
+      <div class="redes-sociais">
+        <h3>Siga-nos</h3>
+        <div class="social-icons">
+          <a  class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a  class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a  class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-col">
+        <h3>Caffè Sublime</h3>
+        <p>Sabores que Inspiram, Momentos que Marcam</p>
+      </div>
+      <div class="footer-col">
+        <h3>Horário</h3>
+        <p>Segunda a Sábado: 7h - 18h</p>
+        <p>Domingo: 8h - 14h</p>
+      </div>
+      <div class="footer-col">
+        <h3>Newsletter</h3>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Seu e-mail" required>
+          <button type="submit">Assinar</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="current-year"></span> Caffè Sublime.</p>
+    </div>
+  </footer>
+
+  <script src="/static/scripts/coffee.js"></script>
+</body>
+</html>
